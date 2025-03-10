@@ -1,1 +1,37 @@
-<h1>hola jaja</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación de Imágenes</title>
+</head>
+<body>
+
+    <h1>Vota por tu imagen favorita</h1>
+    <button onclick="logout()">Cerrar Sesión</button>
+
+    <div class="container">
+        <div class="image-box" id="img1">
+            <img src="https://via.placeholder.com/200" alt="Imagen 1">
+            <p>Votos: <span id="votos1">0</span></p>
+            <button class="vote-btn" onclick="votar('img1')">Votar</button>
+        </div>
+
+        <div class="image-box" id="img2">
+            <img src="https://via.placeholder.com/200" alt="Imagen 2">
+            <p>Votos: <span id="votos2">0</span></p>
+            <button class="vote-btn" onclick="votar('img2')">Votar</button>
+        </div>
+
+        <div class="image-box" id="img3">
+            <img src="https://via.placeholder.com/200" alt="Imagen 3">
+            <p>Votos: <span id="votos3">0</span></p>
+            <button class="vote-btn" onclick="votar('img3')">Votar</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
+
