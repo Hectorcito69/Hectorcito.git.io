@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Votación</title>
 </head>
 <body>
+    <h2>Vota por tu imagen favorita</h2>
+    <div id="imagenes">
+        <img src="img1.jpg" onclick="votar('img1')">
+        <img src="img2.jpg" onclick="votar('img2')">
+        <img src="img3.jpg" onclick="votar('img3')">
+    </div>
+    
+    <p id="mensaje"></p>
+    <button onclick="logout()">Cerrar sesión</button>
 
-    <h2>Iniciar Sesión</h2>
-    <input type="email" id="email" placeholder="Correo">
-    <input type="password" id="password" placeholder="Contraseña">
-    <button onclick="login()">Iniciar Sesión</button>
-
-    <h2>Registrarse</h2>
-    <input type="email" id="newEmail" placeholder="Correo">
-    <input type="password" id="newPassword" placeholder="Contraseña">
-    <button onclick="register()">Registrarse</button>
-
-    <script src="script.js" type="module"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
