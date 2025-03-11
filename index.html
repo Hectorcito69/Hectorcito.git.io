@@ -9,16 +9,19 @@
     <h2>Iniciar Sesión</h2>
     <input type="email" id="email" placeholder="Correo">
     <input type="password" id="password" placeholder="Contraseña">
-    <button id="btnLogin">Iniciar Sesión</button>
+    <button onclick="login()">Iniciar Sesión</button>
 
     <h2>Registrarse</h2>
     <input type="email" id="regEmail" placeholder="Correo">
     <input type="password" id="regPassword" placeholder="Contraseña">
-    <button id="btnRegister">Registrarse</button>
+    <button onclick="register()">Registrarse</button>
 
+    <!-- Firebase SDKs -->
     <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+    <!-- Script principal -->
     <script type="module" src="script.js"></script>
 </body>
 </html>
